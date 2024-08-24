@@ -4,3 +4,10 @@ declare module "profile/Profile" {
   const BlogProfile: FC;
   export default BlogProfile;
 }
+
+// admin
+declare module "admin/Admin" {
+  import { FC } from "react";
+  const Admin: FC;
+  export default Admin;
+}

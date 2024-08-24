@@ -1,3 +1,4 @@
+import Admin from "admin/Admin";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const Router = () => {
@@ -13,6 +14,10 @@ const Router = () => {
           lazy: async () => ({
             Component: (await import("./page/home")).default,
           }),
+        },
+        {
+          path: "/admin",
+          element: <Admin />,
         },
       ],
     },

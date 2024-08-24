@@ -10,7 +10,7 @@ export default defineConfig({
       name: "blog-admin",
       filename: "adminEntry.js",
       exposes: {
-        "./admin": "./src/router.tsx",
+        "./Admin": "./src/router.tsx",
       },
       shared: ["react", "react-dom"],
     }),

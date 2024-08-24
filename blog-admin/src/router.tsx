@@ -1,7 +1,5 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 const Router = () => {
-  const router = createBrowserRouter([
+  const routes = [
     {
       path: "/",
       lazy: async () => ({
@@ -22,9 +20,8 @@ const Router = () => {
         },
       ],
     },
-  ]);
-
-  return <RouterProvider router={router} />;
+  ];
+  return routes;
 };
 
 export default Router;

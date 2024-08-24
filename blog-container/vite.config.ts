@@ -10,6 +10,7 @@ export default defineConfig({
       name: "mutan-blog",
       remotes: {
         profile: "https://mutan-blog-frontend.vercel.app/assets/blogEntry.js",
+        admin: "",
       },
       shared: ["react", "react-dom"],
     }),

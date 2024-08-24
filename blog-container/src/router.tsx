@@ -1,4 +1,3 @@
-import Admin from "admin/Admin";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const Router = () => {
@@ -15,10 +14,10 @@ const Router = () => {
             Component: (await import("./page/home")).default,
           }),
         },
-        {
-          path: "/admin",
-          element: <Admin />,
-        },
+        // {
+        //   path: "/profile",
+        //   element: <BlogProfile />,
+        // },
       ],
     },
   ]);

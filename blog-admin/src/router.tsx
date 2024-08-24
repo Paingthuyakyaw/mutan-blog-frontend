@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const Router = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/admin",
       lazy: async () => ({
         Component: (await import("./layout/app-layout")).default,
       }),

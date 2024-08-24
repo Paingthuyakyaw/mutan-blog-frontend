@@ -12,7 +12,7 @@ export default defineConfig({
       exposes: {
         "./Admin": "./src/router.tsx",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "react-router-dom"],
     }),
   ],
   resolve: {

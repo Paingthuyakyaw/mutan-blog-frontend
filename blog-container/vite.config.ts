@@ -13,7 +13,7 @@ export default defineConfig({
         admin:
           "https://mutan-blog-frontend-tdt2.vercel.app/assets/adminEntry.js",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "react-router-dom"],
     }),
   ],
   build: {

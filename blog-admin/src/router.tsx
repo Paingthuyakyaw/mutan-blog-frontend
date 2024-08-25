@@ -1,7 +1,7 @@
 const Router = () => {
   const routes = [
     {
-      path: "/",
+      path: "/admin",
       lazy: async () => ({
         Component: (await import("./layout/app-layout")).default,
       }),

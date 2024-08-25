@@ -6,8 +6,4 @@ declare module "profile/Profile" {
 }
 
 // admin
-declare module "admin/Admin" {
-  import { FC } from "react";
-  const Admin: FC;
-  export default Admin;
-}
+declare module "admin/Admin";

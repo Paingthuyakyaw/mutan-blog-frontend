@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import CreateModel from "./components/create-model";
 
 const Posts = () => {
   return (
@@ -13,7 +13,7 @@ const Posts = () => {
         </div>
         <div className=" flex gap-5">
           <Input placeholder="Search your post" className=" w-[300px]" />
-          <Button>Create Post</Button>
+          <CreateModel />
         </div>
       </div>
     </div>

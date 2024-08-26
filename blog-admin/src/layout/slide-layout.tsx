@@ -30,7 +30,7 @@ const SliderLayout = () => {
                   transition={{ duration: 0.3 }}
                   className="
                    absolute bg-blogPrimary before:absolute before:border-[22px] before:border-t-transparent before:border-l-transparent before:border-b-transparent before:border-r-gray-50 before:right-[-1px] before:top-0    w-full -z-10  left-0 h-full
-                    after:absolute after:border-[22px] after:left-0 after:border-r-0 after:border-t-gray-50 after:border-b-gray-50 after:border-b-transparent after:rotate-180 after:border-l-transparent 
+                    after:absolute after:border-[22px] after:left-0 after:border-r-0 after:border-t-gray-50 after:border-b-gray-50  after:rotate-180 after:border-l-transparent 
                    "
                 ></motion.span>
               )}

@@ -26,7 +26,7 @@ const UploadFile = ({ form, selectedImage, setSelectedImage }: uploadDto) => {
         accept="image/*"
         onChange={(e) => {
           if (!e.target.files) return;
-          form.setValue("file", e.target.files[0]);
+          form.setValue("file", e.target.files);
           setSelectedImage(e?.target?.files?.[0]);
         }}
         type="file"

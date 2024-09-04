@@ -17,12 +17,13 @@ import UploadFile from "./upload-file";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Badge } from "@/components/ui/badge";
+import { IconLoader, IconX } from "@tabler/icons-react";
 
 const MAX_FILE_SIZE = 50000000;
 const ACCEPTED_IMAGE_TYPES = [
@@ -130,28 +131,75 @@ const CreateModel = () => {
               name="tagId"
               control={form.control}
               render={({ field }) => {
-                console.log(field, "option");
-
                 return (
                   <FormItem>
-                    <FormLabel>Tags</FormLabel>
-                    <Select onValueChange={field.onChange}>
+                    <FormLabel className="block">Tags</FormLabel>
+                    <DropdownMenu>
                       <FormControl>
-                        <SelectTrigger>
-                          <SelectValue />
-                        </SelectTrigger>
+                        <DropdownMenuTrigger className=" w-full">
+                          <div className=" bg-gray-100 w-full flex items-center gap-3 rounded-md  h-[40px] ">
+                            {field.value.length !== 0 ? (
+                              <>
+                                {data.map(
+                                  (item) =>
+                                    field.value.includes(item.id) && (
+                                      <div key={item.id}>
+                                        <Badge className=" relative ">
+                                          {item.tag}
+                                          <IconX
+                                            size={15}
+                                            onClick={() =>
+                                              field.onChange(
+                                                field.value.filter(
+                                                  (d) => d !== item.id
+                                                )
+                                              )
+                                            }
+                                            className=" absolute top-[-5px] shadow right-[-5px] rounded-full bg-white text-black "
+                                          />
+                                        </Badge>
+                                      </div>
+                                    )
+                                )}
+                              </>
+                            ) : (
+                              <p className=" pl-2 text-sm text-gray-500">
+                                Select your tags
+                              </p>
+                            )}
+                          </div>
+                        </DropdownMenuTrigger>
                       </FormControl>
-                      <SelectContent>
-                        {DataPost.data.map((option) => (
-                          <SelectItem
-                            value={option.id.toString()}
-                            key={option.id}
-                          >
-                            {option.tag}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                      <DropdownMenuContent className=" w-[500px]">
+                        {!data ? (
+                          <div className=" flex items-center justify-center h-[100px]">
+                            <IconLoader className=" animate-spin" />
+                          </div>
+                        ) : (
+                          <>
+                            {data.map((item) => {
+                              return (
+                                <DropdownMenuCheckboxItem
+                                  checked={field.value.includes(item.id)}
+                                  onCheckedChange={(value) => {
+                                    if (value) {
+                                      field.onChange([...field.value, item.id]);
+                                    } else {
+                                      field.onChange(
+                                        field.value.filter((v) => v !== item.id)
+                                      );
+                                    }
+                                  }}
+                                  key={item.id}
+                                >
+                                  {item.tag}
+                                </DropdownMenuCheckboxItem>
+                              );
+                            })}
+                          </>
+                        )}
+                      </DropdownMenuContent>
+                    </DropdownMenu>
                   </FormItem>
                 );
               }}
@@ -167,22 +215,13 @@ const CreateModel = () => {
 
 export default CreateModel;
 
-//==================== dummy data  ====================//
-export const DataPost = {
-  success: true,
-  data: [
-    {
-      id: 1,
-      tag: "Programming",
-      created_at: "2024-08-18T15:02:06.642Z",
-      updated_at: "2024-08-18T15:02:06.642Z",
-    },
-    {
-      id: 2,
-      tag: "Technology",
-      created_at: "2024-08-18T15:02:06.642Z",
-      updated_at: "2024-08-18T15:02:06.642Z",
-    },
-  ],
-  message: "All tags",
-};
+const data = [
+  {
+    id: 1,
+    tag: "Programming",
+  },
+  {
+    id: 2,
+    tag: "Technology",
+  },
+];

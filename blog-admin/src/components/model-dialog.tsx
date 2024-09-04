@@ -1,5 +1,11 @@
 import { ReactNode } from "react";
-import { Dialog, DialogContent, DialogPortal, DialogTitle } from "./ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogPortal,
+  DialogTitle,
+} from "./ui/dialog";
 
 const ModelDialog = ({
   open,
@@ -13,9 +19,9 @@ const ModelDialog = ({
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogPortal>
-        <DialogContent className=" max-w-xl ">
+        <DialogContent className="   max-w-xl ">
           <DialogTitle></DialogTitle>
-          {/* <DialogDescription></DialogDescription> */}
+          <DialogDescription></DialogDescription>
           {children}
         </DialogContent>
       </DialogPortal>

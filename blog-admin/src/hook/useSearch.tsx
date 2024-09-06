@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo } from "react";
 
 const useSearch = ({
   value,
-  pageSize,
+  pageSize = 10,
 }: {
   value: string;
   pageSize: number;
@@ -18,7 +18,6 @@ const useSearch = ({
         item.name.toLowerCase().includes(value.toLowerCase())
       );
       setFilterData(filtered);
-      setPage(1); // Reset to the first page whenever the search value changes
     }, 500);
 
     return () => clearTimeout(handler);
@@ -35,8 +34,8 @@ const useSearch = ({
   const totalPages = Math.ceil(filterData.length / pageSize);
 
   return {
-    paginatedData,
-    currentPage: page,
+    filterByData: paginatedData,
+    page,
     totalPages,
     setPage,
   };

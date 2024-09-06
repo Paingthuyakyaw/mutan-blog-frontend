@@ -53,7 +53,8 @@ export const postData = [
   },
   {
     id: 3,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*def456.png",
+    image:
+      "https://strapi.dhiwise.com/uploads/Blog_Common_Image_Next_OG_Image_8ab5e85f77.png",
     name: "Next.js Essentials",
     author: "David",
     create_date: "Jul 30 2024",
@@ -78,7 +79,8 @@ export const postData = [
   },
   {
     id: 4,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*ghi789.png",
+    image:
+      "https://arquivo.devmedia.com.br/marketing/img/guia-javascript-34372.png",
     name: "Modern JavaScript",
     author: "Sophia",
     create_date: "Jun 20 2024",
@@ -103,7 +105,8 @@ export const postData = [
   },
   {
     id: 5,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*jkl012.png",
+    image:
+      "https://cdn.prod.website-files.com/610bb663a35dd3364ddbf08c/633d929c815ed377c56cc27b_vue-2022-min.png",
     name: "Vue.js Basics",
     author: "Oliver",
     create_date: "May 25 2024",
@@ -128,7 +131,8 @@ export const postData = [
   },
   {
     id: 6,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*mno345.png",
+    image:
+      "https://i.ytimg.com/vi/Vn2bIv_J_UE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCB5Ev_7Dl2uHxdKtDBHijRCRWhFg",
     name: "Svelte: The New Wave",
     author: "Liam",
     create_date: "Apr 10 2024",
@@ -153,7 +157,8 @@ export const postData = [
   },
   {
     id: 7,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*pqr678.png",
+    image:
+      "https://wallpapers.com/images/hd/angular-logo-in-glittery-black-m51gr5vhap1khvl2.jpg",
     name: "Angular for Professionals",
     author: "Emma",
     create_date: "Mar 5 2024",
@@ -178,7 +183,7 @@ export const postData = [
   },
   {
     id: 8,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*stu901.png",
+    image: "https://cdn.codersociety.com/uploads/graphql-reasons.png",
     name: "Understanding GraphQL",
     author: "Charlotte",
     create_date: "Feb 28 2024",
@@ -203,7 +208,8 @@ export const postData = [
   },
   {
     id: 9,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*vwx234.png",
+    image:
+      "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
     name: "Redux in Depth",
     author: "Mia",
     create_date: "Jan 15 2024",
@@ -228,7 +234,7 @@ export const postData = [
   },
   {
     id: 10,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*yzb567.png",
+    image: "https://reactnative.dev/img/logo-og.png",
     name: "React Native: Build Mobile Apps",
     author: "James",
     create_date: "Dec 5 2023",
@@ -253,7 +259,8 @@ export const postData = [
   },
   {
     id: 11,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*cde890.png",
+    image:
+      "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5b9eda26-9041-4d59-a5d7-f2ddf660b950/webpack-dependency-graph.png",
     name: "Mastering Webpack",
     author: "Isabella",
     create_date: "Nov 20 2023",
@@ -278,7 +285,7 @@ export const postData = [
   },
   {
     id: 12,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*efg123.png",
+    image: "https://tailwindcss.com/_next/static/media/card.a1cd9cff.jpg",
     name: "Tailwind CSS: Utility-First Design",
     author: "Emily",
     create_date: "Oct 10 2023",
@@ -303,7 +310,8 @@ export const postData = [
   },
   {
     id: 13,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*hij456.png",
+    image:
+      "https://c4.wallpaperflare.com/wallpaper/619/468/16/node-js-javascript-wallpaper-preview.jpg",
     name: "Node.js Fundamentals",
     author: "Oliver",
     create_date: "Sep 15 2023",
@@ -328,7 +336,8 @@ export const postData = [
   },
   {
     id: 14,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*klm789.png",
+    image:
+      "https://miro.medium.com/v2/resize:fit:805/1*7fe7SkSNP6Y8PvTRm4Jl6Q.png",
     name: "Express.js in Action",
     author: "Charlotte",
     create_date: "Aug 20 2023",
@@ -353,7 +362,8 @@ export const postData = [
   },
   {
     id: 15,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*nop012.png",
+    image:
+      "https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png",
     name: "MongoDB: NoSQL Databases",
     author: "James",
     create_date: "Jul 5 2023",
@@ -378,7 +388,8 @@ export const postData = [
   },
   {
     id: 16,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*qrs345.png",
+    image:
+      "https://images.prismic.io//intuzwebsite/48f9ef55-8448-492c-a15a-883749fa9e3f_Banner.png?w=1200&q=75&auto=format,compress&fm=png8",
     name: "GraphQL vs REST",
     author: "Lucas",
     create_date: "Jun 10 2023",
@@ -403,7 +414,8 @@ export const postData = [
   },
   {
     id: 17,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*tuv678.png",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1400/1*-Ijet6kVJqGgul6adezDLQ.png",
     name: "React Hooks: Beyond the Basics",
     author: "David",
     create_date: "May 15 2023",
@@ -428,7 +440,8 @@ export const postData = [
   },
   {
     id: 18,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*wxy901.png",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1400/1*PX4FJQvB0mPPdH-khbH33A.png",
     name: "React Query for Data Fetching",
     author: "Elena",
     create_date: "Apr 20 2023",
@@ -453,7 +466,8 @@ export const postData = [
   },
   {
     id: 19,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*yzb234.png",
+    image:
+      "https://pagepro.co/blog/wp-content/uploads/2021/04/Jamstackpicture.png",
     name: "Building with JAMstack",
     author: "Lucas",
     create_date: "Mar 5 2023",
@@ -478,7 +492,8 @@ export const postData = [
   },
   {
     id: 20,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*abc567.png",
+    image:
+      "https://clickysoft.com/wp-content/uploads/2023/05/React-Performance-Optimization-1536x864-1.jpg",
     name: "React Performance Optimization",
     author: "Mia",
     create_date: "Feb 10 2023",
@@ -503,7 +518,8 @@ export const postData = [
   },
   {
     id: 21,
-    image: "https://miro.medium.com/v2/resize:fit:800/1*def890.png",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1200/1*O8n5d6QlAhrCARUfvW7BLA.png",
     name: "Introduction to Deno",
     author: "Sophia",
     create_date: "Jan 20 2023",

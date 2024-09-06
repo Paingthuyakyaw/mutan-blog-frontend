@@ -6,7 +6,12 @@ import useSearch from "@/hook/useSearch";
 
 const Posts = () => {
   const [value, setValue] = useState("");
-  const { filterData } = useSearch({ value });
+  const { filterByData, page, setPage, totalPages } = useSearch({
+    value,
+    pageSize: 10,
+  });
+
+  console.log(page);
 
   return (
     <div className=" w-full">
@@ -27,8 +32,13 @@ const Posts = () => {
           <CreateModel />
         </div>
       </div>
-      <div className=" mt-5">
-        <TablePost data={filterData} />
+      <div className=" mb-5 mt-5">
+        <TablePost
+          page={page}
+          setPage={setPage}
+          total={totalPages}
+          data={filterByData}
+        />
       </div>
     </div>
   );

@@ -6,8 +6,6 @@ import {
   RouteObject,
 } from "react-router-dom";
 
-console.log(Admin);
-
 const Router = () => {
   const [router, setRouter] =
     useState<ReturnType<typeof createBrowserRouter>>();
@@ -18,7 +16,6 @@ const Router = () => {
     setRouter(router);
   }, []);
 
-  // Render `null` if `router` is not set yet to avoid issues
   if (!router) return null;
 
   return <RouterProvider router={router} />;
@@ -26,7 +23,6 @@ const Router = () => {
 
 export default Router;
 
-// Define the route array with the correct type
 const containerRouter: RouteObject[] = [
   {
     path: "/",
@@ -40,7 +36,13 @@ const containerRouter: RouteObject[] = [
           Component: (await import("./page/home")).default,
         }),
       },
-      // Add more routes as needed
+      {
+        path: "/posts/:id",
+        lazy: async () => ({
+          Component: (await import("./page/posts/components/post-detail"))
+            .default,
+        }),
+      },
     ],
   },
 ];

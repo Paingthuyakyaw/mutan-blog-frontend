@@ -11,7 +11,6 @@ const useSearch = ({
   const [filterData, setFilterData] = useState<postDataProp[]>([]);
   const [page, setPage] = useState(1);
 
-  // Effect to handle filtering based on the search value
   useEffect(() => {
     const handler = setTimeout(() => {
       const filtered = postData.filter((item) =>
@@ -23,7 +22,6 @@ const useSearch = ({
     return () => clearTimeout(handler);
   }, [value]);
 
-  // Calculate the paginated data using useMemo to optimize performance
   const paginatedData = useMemo(() => {
     const startIndex = (page - 1) * pageSize;
     const endIndex = startIndex + pageSize;

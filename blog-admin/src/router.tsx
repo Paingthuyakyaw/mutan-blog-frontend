@@ -13,7 +13,7 @@ const Router = () => {
           }),
         },
         {
-          path: "posts",
+          path: "/admin/posts",
           lazy: async () => ({
             Component: (await import("./page/posts")).default,
           }),

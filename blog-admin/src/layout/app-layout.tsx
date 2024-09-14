@@ -3,7 +3,7 @@ import SliderLayout from "./slide-layout";
 
 const AppLayout = () => {
   return (
-    <div className=" m-5 flex  ">
+    <div className="  flex  ">
       <div className=" rounded-l-md md:w-[300px] 2xl:w-[400px] 2xl:px-14 min-h-screen bg-gray-200 hidden lg:block text-white  px-5 pt-3">
         <div className=" font-libre font-bold 2xl:text-2xl  text-gray-600 text-xl">
           Mutan WorldCraft

@@ -8,7 +8,7 @@ const Posts = () => {
   const [value, setValue] = useState("");
   const { filterByData, page, setPage, totalPages } = useSearch({
     value,
-    pageSize: 10,
+    pageSize: 8,
   });
 
   console.log(page);

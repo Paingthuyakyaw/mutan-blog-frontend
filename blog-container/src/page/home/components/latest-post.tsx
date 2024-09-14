@@ -48,7 +48,7 @@ const LatestPost = () => {
               </div>
               <div className=" max-[759px]:hidden min-[760px]:block  col-span-1">
                 <div className=" space-y-3">
-                  <p className=" uppercase space-x-3 text-sm tracking-widest font-thin text-gray-500">
+                  <p className=" uppercase space-x-3 text-sm tracking-widest font-thin text-black/70">
                     {post.type.map((item, idx) => (
                       <span key={idx}>{item}</span>
                     ))}

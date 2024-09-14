@@ -23,7 +23,7 @@ const Home = () => {
           </div>
           <div className=" text-[12px] md:text-medium flex justify-end items-center gap-2">
             <span className="  text-black/50">Project Initiation :</span>
-            <span className=" font-thin text-black/40 text-[10px] md:text-[14px]">
+            <span className=" font-thin text-black/80 text-[10px] md:text-[14px]">
               Aug 21 , 2024
             </span>
           </div>

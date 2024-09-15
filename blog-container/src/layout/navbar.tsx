@@ -48,9 +48,12 @@ const Navbar = () => {
         <Button className=" hidden md:block lg:block rounded-md border border-black ">
           Login
         </Button>
-        <Button onClick={() => setOpen(!open)} className=" md:hidden p-0">
+        <button
+          onClick={() => setOpen(!open)}
+          className="  max-[767px]:block min-[768px]:hidden  p-0"
+        >
           <IconBaseLine />
-        </Button>
+        </button>
       </div>
 
       {/* slide bar mobile view */}

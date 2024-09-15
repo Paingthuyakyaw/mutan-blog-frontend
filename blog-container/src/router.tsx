@@ -37,10 +37,22 @@ const containerRouter: RouteObject[] = [
         }),
       },
       {
+        path: "/posts",
+        lazy: async () => ({
+          Component: (await import("./page/posts/index")).default,
+        }),
+      },
+      {
         path: "/posts/:id",
         lazy: async () => ({
           Component: (await import("./page/posts/components/post-detail"))
             .default,
+        }),
+      },
+      {
+        path: "/about",
+        lazy: async () => ({
+          Component: (await import("./page/about/index")).default,
         }),
       },
     ],

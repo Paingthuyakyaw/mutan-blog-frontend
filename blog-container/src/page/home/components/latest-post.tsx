@@ -31,7 +31,7 @@ const LatestPost = () => {
               {/* responsive for sm */}
               <div className="  md:hidden col-span-1">
                 <div className=" space-y-3">
-                  <p className=" uppercase space-x-3 text-[12px] tracking-widest font-thin text-gray-500">
+                  <p className=" uppercase space-x-3 text-[12px] tracking-widest  text-gray-500">
                     {post.type.map((item, idx) => (
                       <span key={idx}>{item}</span>
                     ))}
@@ -48,13 +48,13 @@ const LatestPost = () => {
               </div>
               <div className=" max-[759px]:hidden min-[760px]:block  col-span-1">
                 <div className=" space-y-3">
-                  <p className=" uppercase space-x-3 text-sm tracking-widest font-thin text-black/70">
+                  <p className=" uppercase space-x-3 text-sm tracking-widest  text-black/70">
                     {post.type.map((item, idx) => (
                       <span key={idx}>{item}</span>
                     ))}
                   </p>
                   <h3 className=" font-libre text-2xl ">{post.name}</h3>
-                  <p className=" md:line-clamp-3 lg:line-clamp-none font-thin text-sm text-black/80 ">
+                  <p className=" md:line-clamp-3 lg:line-clamp-none  text-sm text-black/80 ">
                     {post.details.description}
                   </p>
                   <div className=" flex items-center justify-between">

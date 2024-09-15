@@ -17,7 +17,7 @@ const PostDetail = () => {
         className=" rounded-md h-auto lg:h-[600px] object-cover "
       />
       <div className=" max-w-full container max-[600px]:mt-5 lg:mt-10 xl:mt-10 2xl:mt-10 md:mt-10">
-        <div className=" uppercase space-x-3 max-[600px]:text-[10px] md:text-sm tracking-widest font-thin text-black/80">
+        <div className=" uppercase space-x-3 max-[600px]:text-[10px] md:text-sm tracking-widest  text-black/50">
           {data.type.map((cat, idx) => (
             <span className=" uppercase" key={idx}>
               {cat}
@@ -28,7 +28,7 @@ const PostDetail = () => {
           {data.name}
         </h3>
 
-        <div className=" text-justify mt-5 space-y-5 max-[600px]:text-sm font-thin text-black/80 ">
+        <div className=" text-justify mt-5 space-y-5 max-[600px]:text-sm  text-black/50 ">
           <p>{data.details.description}</p>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.

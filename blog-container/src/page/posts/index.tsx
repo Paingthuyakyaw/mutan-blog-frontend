@@ -10,14 +10,14 @@ const Posts = () => {
 
   return (
     <div className=" container max-w-full">
-      <div className=" space-y-14 md:space-y-3 mt-10">
-        <div
-          onClick={() => navigate(-1)}
-          className=" cursor-pointer flex items-center gap-2"
-        >
-          <IconBack />
-          Back
-        </div>
+      <div
+        onClick={() => navigate(-1)}
+        className=" cursor-pointer flex min-[801px]:mt-10 max-[800px]:mt-5 items-center gap-2"
+      >
+        <IconBack />
+        Back
+      </div>
+      <div className=" mt-5 space-y-14 md:space-y-3">
         {data.map((post) => (
           <div
             onClick={() => navigate(`/posts/${post.id}`)}

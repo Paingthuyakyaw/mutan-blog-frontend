@@ -67,7 +67,7 @@ const Posts = () => {
           </div>
         ))}
       </div>
-      <div className=" flex justify-between items-center">
+      <div className=" max-[800px]:mt-8 flex max-[800px]:flex-col min-[801px]:flex-row  justify-between items-center">
         <p>
           Total Page : {page}/{totalPage}
         </p>

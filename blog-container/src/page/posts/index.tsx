@@ -2,15 +2,22 @@ import { useNavigate } from "react-router-dom";
 import { Image } from "@nextui-org/react";
 import IconEye from "../../common/Icon/IconEye";
 import usePagination from "../../hook/usePagination";
+import IconBack from "../../common/Icon/IconBack";
 
 const Posts = () => {
   const navigate = useNavigate();
   const { data, totalPage, page, setPage } = usePagination({ size: 8 });
-  console.log(data);
 
   return (
     <div className=" container max-w-full">
       <div className=" space-y-14 md:space-y-3 mt-10">
+        <div
+          onClick={() => navigate(-1)}
+          className=" cursor-pointer flex items-center gap-2"
+        >
+          <IconBack />
+          Back
+        </div>
         {data.map((post) => (
           <div
             onClick={() => navigate(`/posts/${post.id}`)}

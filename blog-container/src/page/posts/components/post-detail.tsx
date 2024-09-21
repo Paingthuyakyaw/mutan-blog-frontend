@@ -1,16 +1,23 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { postData } from "../../../assets/post-data";
 import { Image } from "@nextui-org/react";
+import IconBack from "../../../common/Icon/IconBack";
 
 const PostDetail = () => {
   const { id } = useParams();
 
   const data = postData.filter((item) => item.id === Number(id))[0];
-
-  console.log(data);
+  const navigate = useNavigate();
 
   return (
     <div className=" pt-5 max-w-full container">
+      <div
+        onClick={() => navigate(-1)}
+        className=" mb-5 cursor-pointer flex items-center gap-2"
+      >
+        <IconBack />
+        Back
+      </div>
       <Image
         src={data.image}
         width={"100%"}
